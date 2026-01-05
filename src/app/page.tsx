@@ -1,6 +1,6 @@
 "use client"
 
-import { ShoppingCart, Check, Shield, Truck, Star, Flame, Heart, TrendingDown, Clock, Award, Lock, CreditCard, Package, Zap, DollarSign, Smartphone, ChevronLeft, ChevronRight } from "lucide-react"
+import { ShoppingCart, Check, Shield, Truck, Star, Flame, Heart, TrendingDown, Clock, Lock, CreditCard, Package, Zap, DollarSign, Smartphone, ChevronLeft, ChevronRight, BadgeCheck } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { useState } from "react"
@@ -356,7 +356,7 @@ export default function Home() {
           <div className="bg-gray-50 border border-gray-300 rounded p-6">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
               <div>
-                <Shield className="w-8 h-8 text-gray-700 mb-2 mx-auto" />
+                <BadgeCheck className="w-8 h-8 text-gray-700 mb-2 mx-auto" />
                 <p className="text-xs font-bold text-gray-800">Garantia 30 Dias</p>
               </div>
               <div>
@@ -376,26 +376,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🟩 BLOCO 11 — BÔNUS (Versão Simplificada e Clean) */}
-      <section className="py-8 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-2xl">
-          <div className="bg-white border-2 border-gray-300 rounded p-6 text-center">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
-              🎁 Bônus Exclusivo
-            </h3>
-            <p className="text-base text-gray-700 mb-2">
-              Guia Anti-Barriga em 7 Dias
-            </p>
-            <p className="text-sm text-gray-600">
-              Protocolo simples de alimentação (Valor: R$ 47,00)
-            </p>
-            <p className="text-lg font-bold text-green-600 mt-2">
-              Hoje: GRÁTIS
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* 🟦 BLOCO 13 — GARANTIA */}
       <section className="py-12 px-4 bg-gradient-to-b from-green-50 to-white">
         <div className="container mx-auto max-w-3xl text-center">
@@ -404,7 +384,7 @@ export default function Home() {
           </h2>
           
           <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-green-500">
-            <Shield className="w-16 h-16 text-green-600 mx-auto mb-4" />
+            <BadgeCheck className="w-20 h-20 text-green-600 mx-auto mb-4" />
             <p className="text-xl text-gray-800 leading-relaxed mb-4">
               Use a Regata Sauna por <span className="font-bold text-green-600">30 dias</span>.
             </p>
